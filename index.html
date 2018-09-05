@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Course Enrollments Fetch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--    custom files relative to easyprogramming.net/canvas/-->
+    <link rel="stylesheet" href="code/enrollments/includes/style.css" />
+    <script src="code/enrollments/includes/script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-12">
+                <form id="myForm" role="form">
+                    <div class="form-group">
+                        <div class="row">
+                        <label for="apiKey" class="col-sm-2 control-label">API Key:</label>
+                        <div class="col-sm-9"><input class="form-control" type="text" id="apiKey" name="apiKey" autocomplete="off"/></div>
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                        <label for="domain" class="col-sm-2 control-label">Domain:</label>
+                        <div class="col-sm-9"><input class="form-control" type="text" id="domain" name="domain" placeholder="xxxxxx.instructure.com (do not include .instructure.com)" autocomplete="off"/></div></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label for="text" class="col-sm-2 control-label">Input:</label>
+                        <div class="col-sm-9"><textarea name="text" id="text" class="form-control" rows='10'></textarea></div>
+                    </div>
+                    </div>
+
+                    <button class="btn btn-default" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row header">
+            <img src="code/enrollments/includes/spinner50.gif" id="spinner" />
+            <div class="col-sm-12">
+                <div id="output"></div>
+            </div>
+            <div class="col-sm-12">
+                <div id="multiples"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
